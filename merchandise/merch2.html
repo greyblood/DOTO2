@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="merch2.css">
+</head>
+<body>
+  <div id="navbar">
+    <div id="navbar-home">
+        <a href="../homepage/home.html"><img src="../homepage/assets/logofinal.png" alt=""></a>
+        <a href="../homepage/home.html" id="homebtn">DOTO 2</a>
+    </div>
+    <div id="navbar-games">
+        <div id="navbar-games-luar">
+            About Games
+        </div>
+        <div id="navbar-games-dropdown-dalem">
+            <div class="navbar-games-dropdown-isi">
+                <a href="../gallery/gallery.html">Heroes List</a>
+
+            </div>
+            <div class="navbar-games-dropdown-isi">
+                <a href="../mechanics/mechanics.html">Game Mechanics</a>
+            </div>
+        </div>
+    </div>
+    <div id="navbar-merchandise">
+        <a href="../merchandise/merch2.html" id="merchandisebtn">Merchandise</a>
+    </div>
+    <div id="navbar-register" class="regis-btn">
+        <a href="../registration/registration.html" id="registerbtn" class="regis-btn-a">Registration</a>
+    </div>
+</div>
+    <div class="container">
+        <div class="slides x">
+          <div class="number">1 / 4</div>
+          <img src="img3/b.png" style="width:100%">
+          <div class="text">DOTO 2 SHIRT</div>
+        </div>
+        <div class="slides x">
+          <div class="number">2 / 4</div>
+          <img src="img3/bg.png" style="width:100%">
+          <div class="text">DOTO 2 ACTION FIGURE</div>
+        </div>
+        <div class="slides x">
+          <div class="number">3 / 4</div>
+          <img src="img3/bg4.png" style="width:100%">
+          <div class="text">DOTO 2 HAT AND HOODIE</div>
+        </div>
+        <div class="slides x">
+          <div class="number">4 / 4</div>
+          <img src="img3/bg3.png" style="width:100%">
+          <div class="text">DOTO 2 ACCESSORIES</div>
+        </div>
+
+        <a class="prev" onclick="incrementslide(-1)">&#10094;</a>
+        <a class="next" onclick="incrementslide(1)">&#10095;</a>
+        
+        </div>
+        <br>
+        
+        <div class="dot-container">
+          <span class="dot" onclick="currentslide(1)"></span> 
+          <span class="dot" onclick="currentslide(2)"></span> 
+          <span class="dot" onclick="currentslide(3)"></span> 
+          <span class="dot" onclick="currentslide(4)"></span>
+        </div>
+        
+        <script>
+        var index = 1;
+        slideshow(index);
+        
+        function incrementslide(n) {
+          slideshow(index += n);
+        }
+        
+        function currentslide(n) {
+          slideshow(index = n);
+        }
+        
+        function slideshow(n) {
+          var i;
+          var slides = document.getElementsByClassName("slides");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {index = 1}    
+          if (n < 1) {index = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[index-1].style.display = "block";  
+          dots[index-1].className += " active";
+        }
+        </script>
+
+
+        <div class="product">
+          <H3>DROW RANGER SHIRT - BLACK</H3>
+          <div class=product1>
+            <img src="img3/shirt.png" alt="" >
+            <div class="price">
+            <p>$9.99</p>
+            <button class="button">Add to Cart</button>
+            </div>
+          </div>
+          <h3>DOTO 2 SHIRT - GREY</h3>
+            <div class="product1">
+            <img src="img3/shirt3.png" alt="">
+            <div class="price">
+            <p>$9.99</p>
+            <button class="button">Add to Cart</button>
+            </div>
+            </div>
+            <h3>PHANTOM ASSASIN SHIRT - BLACK</h3>
+            <div class="product1">
+            <img src="img3/shirt4.png" alt="">
+            <div class="price">
+            <p>$9.99</p>
+            <button class="button">Add to Cart</button>
+            </div>
+            </div>
+            <h3>DOTO 2 HAT - WHITE </h3>
+            <div class="product1">
+            <img src="img3/hat.png" alt="">
+            <div class="price">
+            <p>$12.99</p>
+            <button class="button">Add to Cart</button>
+            </div>
+            </div>
+            <h3>DOTO 2 HOODIE - WHITE</h3>
+            <div class="product1">
+            <img src="img3/hoodie.png" alt="">
+            <div class="price">
+            <p>$29.99</p>
+            <button class="button">Add to Cart</button>
+            </div>
+            </div>
+            <h3>DOTO 2 ACTION FIGURE</h3>
+            <div class="product1">
+            <img src="img3/act1.jpg" alt="">
+            <div class="price">
+            <p>$99.99</p>
+            <button class="button">Add to Cart</button>
+            </div>
+            </div>
+            <h3>PUDGE "HOOK" KEYCHAIN</h3>
+            <div class="product1">
+            <img src="img3/pudgehook.jpeg" alt="">
+            <div class="price">
+            <p>$3.99</p>
+            <button class="button">Add to Cart</button>
+            </div>
+            </div>
+            <h3>DOTO 2 AEGIS NECKLACE</h3>
+            <div class="product1">
+            <img src="img3/necklace.jpg" alt="">
+            <div class="price">
+            <p>$5.99</p>
+            <button class="button">Add to Cart</button>
+            </div>
+            </div>
+            <h3>AGHANIM SCEPTER NECKLACE</h3>
+            <div class="product1">
+            <img src="img3/scepter.jfif" alt="">
+            <div class="price">
+            <p>$5.99</p>
+            <button class="button">Add to Cart</button>
+            </div>
+            </div>
+
+        </div>
+
+        <div id="footer">
+          <div id="footer-socmed">
+              <a href="https://www.instagram.com/?hl=en" target="_blank">
+                  <img src="../homepage/assets/instagram.png" class="socmed" target="_blank" alt="">
+              </a>
+              <a href="https://twitter.com/">
+                  <img src="../homepage/assets/twitter.png" class="socmed" target="_blank" alt="">
+              </a>
+              <a href="https://www.youtube.com/">
+                  <img src="../homepage/assets/youtube.png" class="socmed" target="_blank" alt="">
+              </a>
+          </div>
+          <div id="footer-text">
+              <p>&copy; Copyright by Frans & Ryan</p>
+          </div>
+      </div>
+</body>
+</html>

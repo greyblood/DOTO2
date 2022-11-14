@@ -1,0 +1,346 @@
+* {
+  box-sizing: border-box
+}
+body {
+  font-family: Verdana, sans-serif; 
+  margin:0px;
+  background-color: rgb(92, 19, 92);
+}
+#navbar{
+  display: flex;
+  background-color: rgb(43, 43, 43);
+  justify-content: space-evenly;
+}
+
+#navbar-home{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#navbar-home a img{
+  height: 100px;
+  width: 80px;
+}
+
+#navbar-home a{
+  font-size: 30px;
+  text-decoration: none;
+  color: white;
+  
+}
+
+#homebtn {
+  padding-left: 30px;
+}
+#homebtn:hover {
+  text-shadow:
+    0 0 7px rgb(255, 0, 0),
+    0 0 10px rgb(255, 255, 255),
+    0 0 21px rgb(255, 255, 255),
+    0 0 42px rgb(153, 0, 255),
+    0 0 82px rgb(153, 0, 255),
+    0 0 92px rgb(153, 0, 255),
+    0 0 102px rgb(153, 0, 255),
+    0 0 151px rgb(153, 0, 255);
+}
+
+#navbar-games{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 15vw;
+  padding-top: 30px;
+}
+
+#navbar-games-luar {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  
+
+}
+#navbar-games-dropdown-dalem{
+  display: none;
+}
+
+.navbar-games-dropdown-isi {
+  text-align: center;
+  padding: 10px 0px 10px 10px;
+}
+
+.navbar-games-dropdown-isi a {
+  font-size: 20px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+}
+
+#navbar-games:hover #navbar-games-luar {
+  text-shadow:
+    0 0 7px rgb(255, 0, 0),
+    0 0 10px rgb(255, 255, 255),
+    0 0 21px rgb(255, 255, 255),
+    0 0 42px rgb(153, 0, 255),
+    0 0 82px rgb(153, 0, 255),
+    0 0 92px rgb(153, 0, 255),
+    0 0 102px rgb(153, 0, 255),
+    0 0 151px rgb(153, 0, 255);
+}
+
+#navbar-games:hover #navbar-games-dropdown-dalem{
+  display: block;
+  
+}
+
+.navbar-games-dropdown-isi:hover a {
+  text-shadow:
+    0 0 7px rgb(255, 0, 0),
+    0 0 10px rgb(255, 255, 255),
+    0 0 21px rgb(255, 255, 255),
+    0 0 42px rgb(153, 0, 255),
+    0 0 82px rgb(153, 0, 255),
+    0 0 92px rgb(153, 0, 255),
+    0 0 102px rgb(153, 0, 255),
+    0 0 151px rgb(153, 0, 255);
+}
+
+#navbar-merchandise {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 30px;
+}
+
+#navbar-merchandise a{
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+}
+
+
+#navbar-merchandise:hover #merchandisebtn {
+  text-shadow:
+    0 0 7px rgb(255, 0, 0),
+    0 0 10px rgb(255, 255, 255),
+    0 0 21px rgb(255, 255, 255),
+    0 0 42px rgb(153, 0, 255),
+    0 0 82px rgb(153, 0, 255),
+    0 0 92px rgb(153, 0, 255),
+    0 0 102px rgb(153, 0, 255),
+    0 0 151px rgb(153, 0, 255);
+}
+
+#navbar-register{
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 30px;
+}
+
+#navbar-register a{
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+}
+
+
+#navbar-register:hover #registerbtn{
+  text-shadow:
+    0 0 7px rgb(255, 0, 0),
+    0 0 10px rgb(255, 255, 255),
+    0 0 21px rgb(255, 255, 255),
+    0 0 42px rgb(153, 0, 255),
+    0 0 82px rgb(153, 0, 255),
+    0 0 92px rgb(153, 0, 255),
+    0 0 102px rgb(153, 0, 255),
+    0 0 151px rgb(153, 0, 255);
+}
+
+.slides {display: none}
+img {vertical-align: middle;}
+
+.container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 1s ease-out ;
+  border-radius: 0 3px 3px 0;
+}
+
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(226, 38, 217, 0.8);
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.number {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 15px 12px 0px  20px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.dot-container{
+  text-align: center;
+}
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.x {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+} 
+
+#footer{
+  background-color: rgb(43, 43, 43);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#footer-text{
+  font-size: 14px;
+  color: white;
+  text-shadow:
+    0 0 7px rgb(255, 0, 0),
+    0 0 10px rgb(255, 255, 255),
+    0 0 21px rgb(255, 255, 255),
+    0 0 42px rgb(153, 0, 255),
+    0 0 82px rgb(153, 0, 255),
+    0 0 92px rgb(153, 0, 255),
+    0 0 102px rgb(153, 0, 255),
+    0 0 151px rgb(153, 0, 255);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.socmed{
+  height: 20px;
+  width: 20px;
+  margin: 0px 10px 0px 10px;
+}
+
+@media only screen and (max-width: 800px) {
+  .prev, .next,.text {font-size: 11px}
+  #navbar{
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+  #navbar-home {
+      flex-direction: column;
+      align-items: center;
+  }
+  #navbar-home a, #navbar-games-luar, .navbar-games-dropdown-isi a, #navbar-merchandise a , .regis-btn a{
+      font-size: 80%;
+  }
+  #homebtn {
+      padding-left: 0px;
+  }
+  #navbar-games:hover #navbar-games-dropdown-dalem{
+      display: flex;
+      flex-direction: row;
+  }
+
+  #footer-text p{
+    font-size: 60%;
+  }
+}
+.product{
+  display: flex;
+  align-items: center;
+ flex-direction: column;
+}
+.product1{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.price p{
+  font-size: 25px;
+  color: rgb(36, 243, 98);
+  text-align: center;
+}
+.product img{
+  width: 200px;
+  height: 200px;
+}
+H3{
+  text-align: center;
+  color: #f76767;
+}
+button{
+  font-size: 15px;
+}
+button:hover{
+  color: rgb(26, 238, 61);
+  background:rgb(216, 79, 193);
+  box-shadow: 0 0 50px #e96cf5;
+
+}
+.button {
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration:dashed;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  font: bold;
+}
+.product1 img:hover{
+  background:rgb(216, 79, 193);
+  box-shadow: 0 0 50px #e96cf5;
+}

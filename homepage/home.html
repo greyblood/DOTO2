@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOTO 2</title>
+    <link rel="stylesheet" href="./home.css">
+    <script src="../homepage/JQuery.js"></script>
+
+</head>
+
+<body>
+    <div id="navbar">
+        <div id="navbar-home">
+            <a href="../homepage/home.html"><img src="../homepage/assets/logofinal.png" alt=""></a>
+            <a href="../homepage/home.html" id="homebtn">DOTO 2</a>
+        </div>
+        <div id="navbar-games">
+            <div id="navbar-games-luar">
+                About Games
+            </div>
+            <div id="navbar-games-dropdown-dalem">
+                <div class="navbar-games-dropdown-isi">
+                    <a href="../gallery/gallery.html">Heroes List</a>
+
+                </div>
+                <div class="navbar-games-dropdown-isi">
+                    <a href="../mechanics/mechanics.html">Game Mechanics</a>
+                </div>
+            </div>
+        </div>
+        <div id="navbar-merchandise">
+            <a href="../merchandise/merch2.html" id="merchandisebtn">Merchandise</a>
+        </div>
+        <div id="navbar-register" class="regis-btn">
+            <a href="../registration/registration.html" id="registerbtn" class="regis-btn-a">Registration</a>
+        </div>
+    </div>
+
+    <div id="home-1">
+        <div id="home-1-atas">
+            <h2>ARE YOU READY FOR THE BIGGEST MOBA GAME EVER !!!</h2>
+            <a href="../mechanics/mechanics.html">Click Here to Learn How to Play</a>
+        </div>
+        <div id="home-1-bawah">
+            <div id="home-1-kiri">
+                <img src="../homepage/assets/Daco_4708406.png" alt="">
+            </div>
+            <div id="home-1-tengah">
+                <div id="home-1-slider">
+                    <div id="home-1-slider-box">
+                        <img src="../homepage/assets/img1.jpg" alt="">
+                        <img src="../homepage/assets/img2.jpg" alt="">
+                        <img src="../homepage/assets/img3.jpg" alt="">
+                        <img src="../homepage/assets/img4.jpg" alt="">
+                        <img src="../homepage/assets/img5.jpg" alt="">
+                    </div>
+                </div>
+                <div id="slider-btn">
+                    <button id="prev-btn">Prev</button>
+                    <button id="next-btn">Next</button>
+                </div>
+                <script>
+                    let next = $('#next-btn')
+                    let prev = $('#prev-btn')
+                    let box = $('#home-1-slider-box')
+                    let x = 0
+
+                    box.css({
+                        left: x + '%'
+                    })
+
+                    next.on('click', function () {
+                        if (x < 400) {
+                            x = x + 100
+                        }
+                        else {
+                            x = 0
+                        }
+                        box.css({
+                            left: -x + '%'
+                        })
+                    })
+
+                    prev.on('click', function () {
+                        // x = (x>0) ? (x-100) : 400
+                        if (x > 0) {
+                            x = x - 100
+                        }
+                        else {
+                            x = 400
+                        }
+                        box.css({
+                            left: -x + '%'
+                        })
+                    })
+                </script>
+            </div>
+            <div id="home-1-kanan">
+                <img src="../homepage/assets/PikPng.com_model-png_524613.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div id="home-2-tengah">
+        <div class="home-2">
+            <img src="../homepage/assets/heroes.jpg" alt="">
+            <div class="home-2-kanan">
+                <h3>Choose your favourite heroes <br> and prepare to conquer the DOTO 2 realm</h3>
+                <a href="../gallery/gallery.html">Choose your Hero Now</a>
+            </div>
+        </div>
+
+        <div class="home-2">
+            <div class="home-2-kanan">
+                <h3>Official merchandise available <br> Click button below to order</h3>
+                <a href="../merchandise/merch2.html">Order Now ! </a>
+            </div>
+            <img src="../homepage/assets/merch.jpg" alt="">
+        </div>
+    </div>
+
+
+    <div id="footer">
+        <div id="footer-socmed">
+            <a href="https://www.instagram.com/?hl=en" target="_blank">
+                <img src="../homepage/assets/instagram.png" class="socmed" target="_blank" alt="">
+            </a>
+            <a href="https://twitter.com/">
+                <img src="../homepage/assets/twitter.png" class="socmed" target="_blank" alt="">
+            </a>
+            <a href="https://www.youtube.com/">
+                <img src="../homepage/assets/youtube.png" class="socmed" target="_blank" alt="">
+            </a>
+        </div>
+        <div id="footer-text">
+            <p>&copy; Copyright by Frans & Ryan</p>
+        </div>
+    </div>
+</body>
+
+</html>

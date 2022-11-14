@@ -1,0 +1,256 @@
+*{
+    margin: 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    background-color:lightgrey;
+    margin: 0px;
+}
+.gambar{
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    
+}
+img{
+    width: 600px;
+    height: 400px;
+    
+}
+.text{
+    text-align:justify;
+    font-family:Arial, Helvetica, sans-serif;
+    
+    margin: auto;
+    width: 50%;
+}
+h5{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+h1{
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    margin: auto;
+}
+h2{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+#navbar{
+    display: flex;
+    background-color: rgb(43, 43, 43);
+    justify-content: space-evenly;
+}
+
+#navbar-home{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#navbar-home a img{
+    height: 100px;
+    width: 80px;
+}
+
+#navbar-home a{
+    font-size: 30px;
+    text-decoration: none;
+    color: white;
+    
+}
+
+#homebtn {
+    padding-left: 30px;
+}
+#homebtn:hover {
+    text-shadow:
+      0 0 7px rgb(255, 0, 0),
+      0 0 10px rgb(255, 255, 255),
+      0 0 21px rgb(255, 255, 255),
+      0 0 42px rgb(153, 0, 255),
+      0 0 82px rgb(153, 0, 255),
+      0 0 92px rgb(153, 0, 255),
+      0 0 102px rgb(153, 0, 255),
+      0 0 151px rgb(153, 0, 255);
+}
+
+#navbar-games{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 15vw;
+    padding-top: 30px;
+}
+
+#navbar-games-luar {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    
+
+}
+#navbar-games-dropdown-dalem{
+    display: none;
+}
+
+.navbar-games-dropdown-isi {
+    text-align: center;
+    padding: 10px 0px 10px 10px;
+}
+
+.navbar-games-dropdown-isi a {
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+
+#navbar-games:hover #navbar-games-luar {
+    text-shadow:
+      0 0 7px rgb(255, 0, 0),
+      0 0 10px rgb(255, 255, 255),
+      0 0 21px rgb(255, 255, 255),
+      0 0 42px rgb(153, 0, 255),
+      0 0 82px rgb(153, 0, 255),
+      0 0 92px rgb(153, 0, 255),
+      0 0 102px rgb(153, 0, 255),
+      0 0 151px rgb(153, 0, 255);
+}
+
+#navbar-games:hover #navbar-games-dropdown-dalem{
+    display: block;
+    
+}
+
+.navbar-games-dropdown-isi:hover a {
+    text-shadow:
+      0 0 7px rgb(255, 0, 0),
+      0 0 10px rgb(255, 255, 255),
+      0 0 21px rgb(255, 255, 255),
+      0 0 42px rgb(153, 0, 255),
+      0 0 82px rgb(153, 0, 255),
+      0 0 92px rgb(153, 0, 255),
+      0 0 102px rgb(153, 0, 255),
+      0 0 151px rgb(153, 0, 255);
+}
+
+#navbar-merchandise {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+}
+
+#navbar-merchandise a{
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+
+#navbar-merchandise:hover #merchandisebtn {
+    text-shadow:
+      0 0 7px rgb(255, 0, 0),
+      0 0 10px rgb(255, 255, 255),
+      0 0 21px rgb(255, 255, 255),
+      0 0 42px rgb(153, 0, 255),
+      0 0 82px rgb(153, 0, 255),
+      0 0 92px rgb(153, 0, 255),
+      0 0 102px rgb(153, 0, 255),
+      0 0 151px rgb(153, 0, 255);
+}
+
+#navbar-register{
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+}
+
+#navbar-register a{
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+
+#navbar-register:hover #registerbtn{
+    text-shadow:
+      0 0 7px rgb(255, 0, 0),
+      0 0 10px rgb(255, 255, 255),
+      0 0 21px rgb(255, 255, 255),
+      0 0 42px rgb(153, 0, 255),
+      0 0 82px rgb(153, 0, 255),
+      0 0 92px rgb(153, 0, 255),
+      0 0 102px rgb(153, 0, 255),
+      0 0 151px rgb(153, 0, 255);
+}
+#footer{
+    background-color: rgb(43, 43, 43);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#footer-text{
+    font-size: 14px;
+    color: white;
+    text-shadow:
+      0 0 7px rgb(255, 0, 0),
+      0 0 10px rgb(255, 255, 255),
+      0 0 21px rgb(255, 255, 255),
+      0 0 42px rgb(153, 0, 255),
+      0 0 82px rgb(153, 0, 255),
+      0 0 92px rgb(153, 0, 255),
+      0 0 102px rgb(153, 0, 255),
+      0 0 151px rgb(153, 0, 255);
+      padding-top: 10px;
+      padding-bottom: 10px;
+}
+
+.socmed{
+    height: 20px;
+    width: 20px;
+    margin: 0px 10px 0px 10px;
+}
+
+@media screen and (max-width: 800px) {
+    #navbar{
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 20px;
+    }
+
+    #navbar-home {
+        flex-direction: column;
+        align-items: center;
+    }
+    #homebtn {
+        padding-left: 0px;
+    }
+    #navbar-games:hover #navbar-games-dropdown-dalem{
+        display: flex;
+        flex-direction: row;
+    }
+    #footer-text p{
+        font-size: 60%;
+    }
+    .gambar img{
+        height: 200px;
+        width: 300px;
+    }
+    .text ,h1 ,h2 ,h5{
+        font-size: 80%;
+    }
+    
+    
+}

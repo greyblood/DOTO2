@@ -1,0 +1,355 @@
+*{
+  margin: 0;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+body {
+  background-color: rgb(43,43,43);
+}
+
+#navbar{
+  display: flex;
+  background-color: rgb(43, 43, 43);
+  justify-content: space-evenly;
+}
+
+#navbar-home{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#navbar-home a img{
+  height: 100px;
+  width: 80px;
+}
+
+#navbar-home a{
+  font-size: 30px;
+  text-decoration: none;
+  color: white;
+  
+}
+
+#homebtn {
+  padding-left: 30px;
+}
+#homebtn:hover {
+  text-shadow:
+    0 0 7px rgb(255, 0, 0),
+    0 0 10px rgb(255, 255, 255),
+    0 0 21px rgb(255, 255, 255),
+    0 0 42px rgb(153, 0, 255),
+    0 0 82px rgb(153, 0, 255),
+    0 0 92px rgb(153, 0, 255),
+    0 0 102px rgb(153, 0, 255),
+    0 0 151px rgb(153, 0, 255);
+}
+
+#navbar-games{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 15vw;
+  padding-top: 30px;
+}
+
+#navbar-games-luar {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  
+
+}
+#navbar-games-dropdown-dalem{
+  display: none;
+}
+
+.navbar-games-dropdown-isi {
+  text-align: center;
+  padding: 10px 0px 10px 10px;
+}
+
+.navbar-games-dropdown-isi a {
+  font-size: 20px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+}
+
+#navbar-games:hover #navbar-games-luar {
+  text-shadow:
+    0 0 7px rgb(255, 0, 0),
+    0 0 10px rgb(255, 255, 255),
+    0 0 21px rgb(255, 255, 255),
+    0 0 42px rgb(153, 0, 255),
+    0 0 82px rgb(153, 0, 255),
+    0 0 92px rgb(153, 0, 255),
+    0 0 102px rgb(153, 0, 255),
+    0 0 151px rgb(153, 0, 255);
+}
+
+#navbar-games:hover #navbar-games-dropdown-dalem{
+  display: block;
+  
+}
+
+.navbar-games-dropdown-isi:hover a {
+  text-shadow:
+    0 0 7px rgb(255, 0, 0),
+    0 0 10px rgb(255, 255, 255),
+    0 0 21px rgb(255, 255, 255),
+    0 0 42px rgb(153, 0, 255),
+    0 0 82px rgb(153, 0, 255),
+    0 0 92px rgb(153, 0, 255),
+    0 0 102px rgb(153, 0, 255),
+    0 0 151px rgb(153, 0, 255);
+}
+
+#navbar-merchandise {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 30px;
+}
+
+#navbar-merchandise a{
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+}
+
+
+#navbar-merchandise:hover #merchandisebtn {
+  text-shadow:
+    0 0 7px rgb(255, 0, 0),
+    0 0 10px rgb(255, 255, 255),
+    0 0 21px rgb(255, 255, 255),
+    0 0 42px rgb(153, 0, 255),
+    0 0 82px rgb(153, 0, 255),
+    0 0 92px rgb(153, 0, 255),
+    0 0 102px rgb(153, 0, 255),
+    0 0 151px rgb(153, 0, 255);
+}
+
+#navbar-register{
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 30px;
+}
+
+#navbar-register a{
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+}
+
+
+#navbar-register:hover #registerbtn{
+  text-shadow:
+    0 0 7px rgb(255, 0, 0),
+    0 0 10px rgb(255, 255, 255),
+    0 0 21px rgb(255, 255, 255),
+    0 0 42px rgb(153, 0, 255),
+    0 0 82px rgb(153, 0, 255),
+    0 0 92px rgb(153, 0, 255),
+    0 0 102px rgb(153, 0, 255),
+    0 0 151px rgb(153, 0, 255);
+}
+
+/* cotnent */
+
+hr{
+  border-top: 5px solid rgb(153,0,255);
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+}
+
+h1{
+  text-align: center;
+  margin: 10px;
+  font-size: 40px;
+  color: white;
+}
+
+/* content */
+
+#box{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+}
+
+.row{
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(68, 0, 95);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    flex-direction: row;
+}
+
+.column{
+    background-color:rgb(68, 0, 95);
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.image {
+    border: 1px solid #ddd;
+    border-radius: 0px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 200px;
+    height: 150px;
+    opacity: 1;
+    transition: .5s ease;
+    opacity: 1;
+    transition: .5s ease;
+}
+
+.image:hover {
+      box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+  }
+  
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+  }
+  
+  .column{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .column:hover .image {
+    opacity: 0.3;
+  }
+  
+  .column:hover .middle {
+    opacity: 1;
+  }
+
+
+  .text {
+    text-shadow:
+      0 0 7px rgb(255, 0, 0),
+      0 0 10px rgb(255, 255, 255),
+      0 0 21px rgb(255, 255, 255),
+      0 0 42px rgb(153, 0, 255),
+      0 0 82px rgb(153, 0, 255),
+      0 0 92px rgb(153, 0, 255),
+      0 0 102px rgb(153, 0, 255),
+      0 0 151px rgb(153, 0, 255);
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    
+  }
+
+
+
+  .heroes-skill{
+    display: none;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .heroes-skill img{
+    height: 300px;
+    width: 300px;
+  }
+
+  .heroes-skill ul{
+    height: 200px;
+    width: 200px;
+  }
+.heroes-skill ul li {
+  color: white;
+}
+  .column:hover .heroes-skill{
+    display: flex;
+  }
+
+  #footer{
+    background-color: rgb(43, 43, 43);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#footer-text{
+  font-size: 14px;
+  color: white;
+  text-shadow:
+    0 0 7px rgb(255, 0, 0),
+    0 0 10px rgb(255, 255, 255),
+    0 0 21px rgb(255, 255, 255),
+    0 0 42px rgb(153, 0, 255),
+    0 0 82px rgb(153, 0, 255),
+    0 0 92px rgb(153, 0, 255),
+    0 0 102px rgb(153, 0, 255),
+    0 0 151px rgb(153, 0, 255);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.socmed{
+    height: 20px;
+    width: 20px;
+    margin: 0px 10px 0px 10px;
+}
+
+@media screen and (max-width: 800px) {
+
+  .row{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    
+  }
+  .column{
+    display: flex;
+    flex-direction: row;
+  }
+  #box{
+    display: flex;
+    flex-direction: column;
+  }
+  .column{
+    flex-direction: column;
+  }
+  #navbar{
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: 20px;
+  }
+
+  #navbar-home {
+      flex-direction: column;
+      align-items: center;
+  }
+  #navbar-home a, #navbar-games-luar, .navbar-games-dropdown-isi a, #navbar-merchandise a , .regis-btn a{
+      font-size: 80%;
+  }
+  #homebtn {
+      padding-left: 0px;
+  }
+  #navbar-games:hover #navbar-games-dropdown-dalem{
+      display: flex;
+      flex-direction: row;
+  }
+
+  #footer-text p{
+      font-size: 60%;
+  }
+}
